@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+     <div class="row">
+       <div class="col-md-6">
+         <h2>Add a task that you need to do today...</h2>
+         <form id="new-task">
+           <div class="form-group">
+             <label for="new-task-name">Name of task</label>
+             <input type="text" class="form-control" id="new-task-name" required>
+           </div>
+           <div class="form-group">
+             <label for="new-prioritize">prioritize</label>
+             <input type="text" class="form-control" id="new-prioritize">
+           </div>
+           <div class="form-group">
+             <label for="new-timeframe">Timeframe</label>
+             <input id="new-timeframe" class="form-control" type="date">
+           </div>
+           <div class="form-group">
+             <label for="new-timeofday">Time of day</label>
+             <input id="new-timeofday" class="form-control" type="time">
+           </div>
+           <div class="form-group">
+             <label for="new-notes">Notes</label>
+             <input type="text" class="form-control" id="new-notes" required>
+           </div>
+           <div class="form-group">
+             <label for="color">Prioritize by color</label>
+             <input id="color" class="form-control" type="color">
+           </div>
+           <br>
+           <button type="submit" class="btn">Add</button>
+         </form>
+
+           <h2>List of Tasks</h2>
+           <ul id="outputTask"></ul>
+
+
+       </div>
+     </div>
+   </div>
+  </body>
+</html>
